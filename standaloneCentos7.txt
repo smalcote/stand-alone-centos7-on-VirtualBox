@@ -1,0 +1,69 @@
+Stand alone Centos 7 on a VirtualBox
+
+ If you are thinking,  why install a centos 7 in todays age when a full blown
+VM of various BigData eco-systems are readily available? Think again.
+
+ A quick booting lean and mean Centos 7 on a VirtualBox is very handy in 
+development and testing of all kinds of ML and analytics products. 
+One could easily build stand alone spark and play around with NoSql, ML and 
+graph systems.
+ How about installing Jupyter notebooks on Python and playing around with
+predictive analytics. If you come from  traditional 3 tier architecture
+and want to try out a web based end-to-end system you could install MYsql or
+PostgresSql in the backend and install a suitable web server like tomcat in the
+middle and play around with web development. 
+
+ The ever popular Microsoft SQL server is now available in linux platform.
+There are many opensource inMemory databases to play around with.  Those of 
+you who are into AI and Deep learning could deploy many popular open source 
+projects and play with it. So, The possibilities are endless.
+
+Checklist for deploying Centos 7 on a VirtualBox
+-------------------------------------------------
+Make sure to have atleast 20 GB space on your PC/laptop and plan to configure
+it atleast 3 GB ( 4 GB preferable) main memory.
+
+1. Download a copy of Centos 7 disc image file from centos.org
+
+2. Start VirtualBox and click on New to create a VM.
+   type a suitable name for the VM. elct type as Linux and version
+   as Red Hat(64 Bit)
+3. Choose a suitable memory size. 
+4. Choose "Create a virtual hard disk now' 
+5. chose VDI as hard disk type
+6. Choose "Dynamically allocated" as Storage on physical disk
+7. choose the location for disk
+
+The VirtualBox creates the new VM.
+
+8.  click on the settings and choose general -> advanced and 
+     change shared clipboard to 'bidirectional'
+9. Optional - click on system and change the number of processors if needed
+   and available.
+
+10. right click on VM and start
+11. select the name of the ISO file downloaded from centos and start.
+12. The system will boot and It is time to choose options.
+13. Select installation Destination and continue
+14. Tab to software selection and choose GNOME desktop.
+     choose minimal environment as needed and select DONE.
+15. Select network and hostname and turnon the ethernet connection.
+     setup root password and a user login.
+     select Begin installation.
+
+   The VM will be created.
+
+Shutdown and start the VM again from VirtualBox.
+
+Setup an external client like Putty and connect to the VM.
+Goodluck and have fun.
+
+
+
+
+
+
+
+
+
+
